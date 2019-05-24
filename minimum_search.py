@@ -1,5 +1,5 @@
 """
-This particular algorithm searches for the minumum value in a list. The zero
+This algorithm searches for the minumum value in a list. The zero
 index is assigned by default and if a smaller value is found it is assigned
 as minimum. The search ends once the final index item is evaluated and then the
 index location containing the minimum value is returned.
