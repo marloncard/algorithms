@@ -6,4 +6,4 @@ I will add to this collection as often as possible. At the moment these will be 
 
 
 ## Credits
-I'm currently working through the book "Fundamentals of Python: Data Structions" by Kenneth A. Lambert
+I'm currently working through the book "Fundamentals of Python: Data Structures" by Kenneth A. Lambert

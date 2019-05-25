@@ -9,21 +9,23 @@ the algorithm searches in a higher half of the list at it's new middle position
 Assumptions:
 * Data types are comparable using comparison operators (==, <, >)
 * The list is sorted in ascending order.
+
+Time complexity is O(log_2 n)
 """
 
 
 def binary_search(target, sorted_lyst):
-    left = 0  # O(1)
-    right = len(sorted_lyst) - 1  # O(1)
+    left = 0
+    right = len(sorted_lyst) - 1
     while left <= right:
         midpoint = (left + right) // 2  # O(log n)
         if target == sorted_lyst[midpoint]:
             return midpoint
         elif target < sorted_lyst[midpoint]:
-            right = midpoint - 1  # O(1)
+            right = midpoint - 1
         else:
-            left = midpoint + 1  # O(1)
-    return -1  # O(1)
+            left = midpoint + 1
+    return -1
 
 
 if __name__ == "__main__":

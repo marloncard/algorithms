@@ -3,6 +3,8 @@ The 'Selection Sort' algorithm searches the entire list for the position of the 
 If that position does not equal the first position, then those two items are swapped. The algorithm
 then returns to the second position and repeats this process, swapping the smallest item with the 
 item at the second position if necessary.
+
+Has a time complexity of O(n^2) because of the double while statements
 """
 
 
