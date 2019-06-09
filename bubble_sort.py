@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 The 'Bubble Sort' algorithm starts at the beginning of a list and compares
 pairs of items as it moves towards the end. If the pairs are out of order it 

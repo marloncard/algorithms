@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 A binary search is useful for searching sorted data.
 

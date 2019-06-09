@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 This algorithm searches for the minumum value in a list. The zero
 index is assigned by default and if a smaller value is found it is assigned

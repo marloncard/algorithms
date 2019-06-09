@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 A linear search algorithm that iterates over every record of a list;
 it starts at the zero index and check's each item to the right in turn

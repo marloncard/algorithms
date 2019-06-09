@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 The 'Selection Sort' algorithm searches the entire list for the position of the
 smallest item. If that position does not equal the first position, then those 
