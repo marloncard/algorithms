@@ -23,7 +23,6 @@ def better_bubble_sort(lyst):
     """Improves on bubble sort by returning the list if there are no swaps 
     during one outer loop. Improves best case time complexity"""
     n = len(lyst)
- 
     while n > 1:
         swapped = False
         i = 1
@@ -40,4 +39,4 @@ def better_bubble_sort(lyst):
 
 if __name__ == '__main__':
     print(bubble_sort([8,5,9,2,7,1,3,15,22]))
-    print(better_bubble_sort([1,3,2,5,7,9,15,22]))
+    # print(better_bubble_sort([1,3,2,5,7,9,15,22]))
