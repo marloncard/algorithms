@@ -69,3 +69,72 @@ class LinkedList(Sequence):
             counter = counter + 1
             pointer = pointer.next
         raise IndexError("Index out of bounds")
+
+    def __delitem__(self, index):
+        """ Deletes the node at index """
+        seek_index = index
+        if index < 0:
+            # Account for negative idices 4 + (-1) = index of 3
+            seek_index = len(self) + index
+        # If we still have a negative index raise an IndexError
+        if seek_index < 0:
+            raise IndexError("Index out of bounds")
+        pointer = self.head
+        newll = LinkedList()
+        newll.head = Node(None)
+        counter = 0
+        while pointer != None:
+            if counter == seek_index:
+                while pointer.next != None:
+                    pointer.value = pointer.next.value
+                    pointer = pointer.next
+                return
+            counter += 1
+            newll.head = pointer.head
+            pointer = pointer.next
+
+
+    def insert(self, index, value):
+        seek_index = index
+        if index < 0:
+            seek_index = len(self) + index
+        if seek_index < 0:
+            raise IndexError("Index out of bounds")
+        if seek_index == 0:
+            new_node = Node(value) # Create new node with value
+            new_node.next = self.head # Assign new node.next value of self.head
+            self.head = new_node # Assign self.head new_node's value
+        else:
+            pointer = self.head
+            counter = 0
+            while pointer != None:
+                if counter == seek_index - 1:
+                    new_node = Node(value)
+                    new_node.next = pointer.next
+                    pointer.next = new_node
+                    return
+                counter = counter + 1
+                pointer = pointer.next
+            raise IndexError("Index out of bounds")
+
+
+if __name__ == '__main__':
+    ml = LinkedList()
+    ml.head = Node(1)
+    ml.head.next = Node(2)
+    ml.head.next.next = Node(3)
+    ml.head.next.next.next = Node(4)
+    # assert len(ml) == 3, "length = the number of Nodes"
+
+    # ml.insert(0,4)
+    # print((ml[0], ml[1], ml[2], ml[3]))
+    # assert ml[0] == 4, """[] retrieves correct item
+    #     & insert places at correct index"""
+
+    # ml[1] = "pie"
+    # assert ml[1] == "pie", "setitem works"
+    print((ml[0], ml[1], ml[2], ml[3]))
+    print(len(ml))
+    del(ml[1])
+    print((ml[0], ml[1], ml[2], ml[3]))
+    print(len(ml))
