@@ -48,4 +48,6 @@ def merge(lyst, copy_buffer, low, middle, high):
 
     
 if __name__ == '__main__':
+    import random
     merge_sort([9,5,1,8,15,2,6,11])
+    #print(merge_sort(random.sample(range(100_000), 2000)))

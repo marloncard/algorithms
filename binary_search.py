@@ -30,4 +30,5 @@ def binary_search(target, sorted_lyst):
 
 
 if __name__ == "__main__":
-    print(binary_search(30, [1, 4, 5, 9, 10, 13, 14, 20, 21, 22, 25, 30, 35]))
+    #print(binary_search(30, [1, 4, 5, 9, 10, 13, 14, 20, 21, 22, 25, 30, 35]))
+    print(binary_search(1155,list(range(100000))))

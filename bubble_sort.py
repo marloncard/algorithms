@@ -39,5 +39,7 @@ def better_bubble_sort(lyst):
 
 
 if __name__ == '__main__':
-    print(bubble_sort([8,5,9,2,7,1,3,15,22]))
+    import random
+    #print(bubble_sort([8,5,9,2,7,1,3,15,22]))
     # print(better_bubble_sort([1,3,2,5,7,9,15,22]))
+    print(bubble_sort(random.sample(range(100_000), 2000)))
