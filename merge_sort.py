@@ -7,7 +7,7 @@ Process Summary:
 3. Halt the process once the sublists can no longer be subdivided.
 
 Time Complexity:
-Merge sort has an average time complexity of O(n log n)
+Merge sort has an average time complexity of O(n log n) - quasilinear
 """
 copy_buffer = []
 

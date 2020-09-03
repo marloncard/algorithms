@@ -5,7 +5,9 @@ sorted section. It selects the first unsorted element and swaps other elements
 to the right to create the correct position, shifting the unsorted element. It
 then advances the marker to the right one element and repeats the process.
 
-It consists of a outer and inner loop, giving it a time complexity of O(n^2)
+It consists of a outer and inner loop, giving it an average time complexity of 
+O(n^2). In a best case scenario all items in the list are already ordered, 
+resulting in a time complexity of O(n).
 """
 
 
