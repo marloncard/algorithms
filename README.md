@@ -3,7 +3,9 @@ A collection of typical and atypical algorithms
 
 I will add to this collection as often as possible. At the moment these will be in Python but I will translate to JavaScript as well.
 
+# Tests
 
+Run unit tests with: `python3 -m unittest`
 
 ## Credits
 I'm currently working through the book "Fundamentals of Python: Data Structures" by Kenneth A. Lambert
