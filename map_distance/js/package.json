@@ -1,0 +1,15 @@
+{
+  "name": "Location",
+  "version": "1.0.0",
+  "description": "Look up based on postal code",
+  "main": "postalLookup.js",
+  "author": "Marlon Card",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^0.20.0"
+  },
+  "type": "module"
+}
